@@ -1,0 +1,6 @@
+<form action="/edit/<%= @filename %>" method="POST">
+  <textarea name="new_content" rows="10" cols="50"><% @content.each do |line| %><%= line %><% end %></textarea>
+  <fieldset>
+    <button type="submit">Save Edits</button>
+  </fieldset>
+</form>

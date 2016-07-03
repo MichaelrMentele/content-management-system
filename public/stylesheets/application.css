@@ -1,0 +1,38 @@
+a {
+  color: inherit; 
+}
+
+body {
+  font: normal 20px sans-serif, Helvetica, Arial;
+  color: #3f3f3f;
+  background: #ffffff; 
+}
+
+form.inline {
+  display: inline;
+}
+
+.user-status {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.flash {
+  max-width: 960px;
+  padding: 10px 20px;
+  margin: 20px auto 1.5em auto;
+  background: #ffd800; 
+}
+
+.flash p {
+  font-size: 14px;
+  font-weight: bold; 
+}
+
+.flash.error {
+  color: #ff6633;
+  background: #FFCFBF; 
+}
+
+.flash.success {
+}

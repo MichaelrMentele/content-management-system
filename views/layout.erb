@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>CMS File System</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <% if session[:error] %>
+      <div class="flash error">
+        <p><%= session.delete(:error) %></p>
+      </div>
+      <% end %>
+      <% if session[:success] %>
+        <div class="flash success">
+          <p><%= session.delete(:success) %></p>
+        </div>
+      <% end %>
+      <%== yield %>
+    </main>
+  </body>
+</html>
